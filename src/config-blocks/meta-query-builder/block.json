@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"version": "0.1.0",
+	"category": "query-search",
+
+	"name": "query-search/settings",
+	"title": "Query Parameter & Meta Query Builder",
+	"icon": "smiley",
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": true,
+		"alignWide": true
+	},
+	"attributes": {
+
+    },
+	"textdomain": "query-search"
+}
+

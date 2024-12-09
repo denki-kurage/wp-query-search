@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+    "name": "query-search/number-query-form",
+    "title": "Number Query",
+    "description": "Enter a number",
+	"icon": "smiley",
+    "attributes":
+    {
+        "query": {
+            "type": "integer",
+            "default": 0
+        },
+        "options": {
+            "type": "object",
+            "default": {}
+        }
+    },
+    "textdomain": "query-search"
+}

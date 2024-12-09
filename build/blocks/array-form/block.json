@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "query-search/array-query-form",
+  "title": "Array Query",
+  "description": "Enter the list",
+  "icon": "smiley",
+  "attributes": {
+    "query": {
+      "type": "array",
+      "default": []
+    },
+    "viewTable": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "query-search"
+}

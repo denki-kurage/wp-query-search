@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "query-search/string-query-form",
+  "title": "String Query",
+  "description": "Enter a string",
+  "icon": "smiley",
+  "attributes": {
+    "query": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "query-search"
+}

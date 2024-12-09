@@ -1,0 +1,211 @@
+
+
+
+.selector
+{
+	list-style-type: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.selector-item
+{
+	border: 1px solid transparent;
+}
+
+.selector-item-hover
+{
+	border: 1px solid green;
+}
+
+
+.selector-item-selected
+{
+	border: 1px solid red !important;
+	padding: .5rem;
+}
+
+.key-value-editor
+{
+	width: 100%;
+
+	// TextControlがmargin-bottomに余白を含ませているため、テーブルの中央(middle)に配置されない問題(横のボタンとインラインがことなる)を修正
+	TD>DIV>DIV
+	{
+		margin: 0px;
+	}
+
+	.key-value-editor-add
+	{
+		width: 100%;
+	}
+
+	.components-button-group
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+		.components-button
+		{
+			width: 100%;
+			justify-content: center;
+		}
+	}
+
+}
+
+
+.modal-content-panel
+{
+	position: relative;
+
+	> *
+	{
+		width: 100%;
+	}
+
+	> .modal-content-top, .modal-content-bottom
+	{
+		padding: .3em;
+		position: sticky;
+		opacity: .95;
+	}
+
+	> .modal-content-top
+	{
+		top: 0px;
+	}
+
+	> .modal-content-center
+	{
+		max-height: 45vh;
+		overflow: scroll;
+	}
+
+	> .modal-content-bottom
+	{
+		bottom: 0px;
+	}
+}
+
+
+.notice-info
+{
+	padding: .5em;
+	border: 1px solid green;
+	background-color: rgb(208, 233, 208);
+	border-radius: .1em;
+	margin-top: .3em;
+	margin-bottom: .3em;
+}
+
+.inner-panel
+{
+	padding: .5em;
+	border: 1px solid lightgray;
+	border-radius: .1em;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+.buttons-flex-container
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+
+	> *
+	{
+		justify-content: center;
+		width: 100%;
+		margin: .3em .2em;
+	}
+}
+.block-editor-block-inspector
+{
+	.buttons-flex-container
+	{
+		flex-wrap: wrap;
+	}
+}
+
+.modal-open-button
+{
+	width: 100%;
+	margin-top: .2rem;
+	margin-bottom: .2rem;
+	justify-content: center;
+}
+
+.modal-key-value-editor-container
+{
+
+	.modal-key-value-editor
+	{
+		padding: .3rem;
+		width: 100%;
+
+		TH
+		{
+			text-align: left;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FIELDSET.group-box
+{
+	box-sizing: border-box;
+	border: 1px solid silver;
+	border-radius: .5rem;
+	padding: .6rem;
+
+	LEGEND.group-box-label
+	{
+		padding: .3rem;
+		font-weight: bold;
+		font-size: large;
+	}
+
+	.group-box-title
+	{
+		margin-top: .1rem;
+		margin-bottom: .5rem;
+		padding: .2rem;
+		text-align: center;
+		font-size: small;
+		color: white;
+		background-color: silver;
+		border-radius: .2rem;
+	}
+}
+
+
+FIELDSET.component-area
+{
+	border-top: 3px solid rgb(9, 130, 217);
+	margin: .8rem;
+	padding: .8rem;
+
+	LEGEND.component-area-label
+	{
+		padding: .3rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+

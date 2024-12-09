@@ -1,0 +1,238 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-query-search
+{
+	border: 1px dotted rgb(13, 255, 0);
+
+}
+
+table.endpoint-edit-editor
+{
+	width: 100%;
+	border-spacing: 0px;
+    border-collapse: collapse;
+
+	th, td
+	{
+		border: 1px solid gray;
+		padding: .5rem;
+	}
+}
+
+.result-view-panel
+{
+	box-sizing: border-box;
+	border: 3px solid;
+	border-radius: .5em;
+	padding: .3em;
+}
+
+
+.result-view-label
+{
+	font-size: .8em;
+	box-sizing: border-box;
+	border: 1px solid;
+	border-radius: .5em;
+	padding-left: 1em;
+	margin: .6em 0;
+	opacity: .5;
+
+	div
+	{
+		margin: 0;
+	}
+
+}
+	
+	.result-view-label-main
+	{
+		font-size: 1.5em;
+		display: flex;
+		align-items: center;
+		padding: .5em;
+		padding-left: 1em;
+		margin-top: .1em;
+		margin-bottom: .8em;
+		opacity: 1;
+	}
+
+
+.inner-blocks-panel
+{
+	box-sizing: border-box;
+	border: 2px dotted red;
+	border-radius: 10px;
+	padding: 1em;
+	margin: .8em;
+}
+
+
+
+.input-form-panel
+{
+	box-sizing: border-box;
+	border: 1px solid rgb(0, 195, 255);
+	border-radius: 10px;
+	padding: 1em;
+	margin: .5em;
+}
+
+.inspector-input-form-panel
+{
+
+	box-sizing: border-box;
+	border: 1px solid rgb(0, 255, 60);
+	border-radius: 10px;
+	padding: 1em;
+	margin: .5em;
+}
+
+.query-form-warning
+{
+	margin: .5em;
+	padding: .5em;
+	border: 1px solid red;
+	border-radius: 1em;
+	background-color: rgb(255, 207, 207);
+}
+
+.query-form-select
+{
+	margin: .2em;
+	padding: .3em;
+	border: 1px solid rgb(22, 197, 255);
+
+	> *
+	{
+		overflow: hidden;
+	}
+
+	// チェックボックスとラジオボタンに小さな枠線と複数行表示の設定
+	.components-radio-control__option, .components-base-control__field
+	{
+		white-space: pre;
+		margin-top: .1em;
+		border: 1px solid rgb(219, 219, 219);
+	}
+
+	// チェックボックスを中央へ
+	.components-checkbox-control__input-container
+	{
+		align-self: center;
+	}
+
+}
+
+.query-form-select-radio
+{
+
+	>div
+	{
+		margin-bottom: .5em !important;
+	}
+
+}
+
+.query-form-select-check
+{
+	> *
+	{
+		margin-bottom: .2em !important;
+	}
+}
+
+.query-form-additional
+{
+	padding: .5em;
+	margin-bottom: 1em;
+
+	border: 2px solid rgb(231, 150, 138);
+	border-radius: .3em;
+	
+
+	> *
+	{
+		margin-bottom: .5em !important;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	> button
+	{
+		text-align: center;
+		justify-content: center;
+	}
+
+	&.query-form-endpoint
+	{
+		border-color: green !important;
+	}
+
+}
+
+.query-filters
+{
+	> *
+	{
+		margin: .2em;
+		margin-bottom: .3em;
+	}
+
+	button
+	{
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+.query-search-list-view-warning
+{
+	padding: .8em;
+	border: 1px solid gray;
+	margin: .5em;
+	text-align: center;
+}
+
+.query-search-list-view-table
+{
+	padding: .8em;
+	border: 1px solid gray;
+	margin: .5em;
+	overflow: scroll;
+
+	table
+	{
+		border-collapse: collapse;
+	}
+
+	tr:nth-child(2n)
+	{
+		background-color: rgb(227, 227, 227);
+	}
+	td
+	{
+		padding: .1em;
+
+
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
+
+		margin-right: 1px;
+		
+
+		text-wrap: nowrap;
+		max-width: 20em;
+		overflow: hidden;
+	}
+
+}
+
+.components-checkbox-control
+{
+	margin: .5em .1em;
+}

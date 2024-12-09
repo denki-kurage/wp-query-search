@@ -1,0 +1,163 @@
+
+以下はプロパティコンテキストが参照値ではない場合の処理。
+
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+
+import { withAddPostForm, withDeletePostButton, withEditPostForm } from "../base-components/async-dialog-components/with-entity-components";
+import { useAllEndpointArgs, useEntityConfig } from './hooks';
+import { QueryFormBlocksContextProvider, queryFormEditorBlocksContext } from '../blocks/blocks-context';
+import InnerQueryFormHosts from '../blocks/inner-query-form-hosts';
+import { SubRegistryBlocksComponent, withLocalBlockEditorRegistry } from '../base-components/block-editor-registry-provider';
+import { useDispatch, useSelect } from '@wordpress/data';
+import { store as coreStore, useEntityRecord } from '@wordpress/core-data';
+import { getChangedBlockQuery, flatToObject, useSchemaToBlocks } from './edit-entity-buttons-hooks';
+import { withEditTable } from '../blocks/hoc';
+import { usePropertyContext } from '../base-components/input-forms-property-context';
+
+
+const useLocalBlocks = (kind: string, name: string, record: any = {}) =>
+{
+	const { args } = useAllEndpointArgs(kind, name, 'POST');
+	// @ts-ignore
+	const { config } = useEntityConfig(kind, name);
+	const rawAttrs = config?.rawAttributes ?? [];
+
+	const { blocks, trackingBlockData } = useSchemaToBlocks(args, record, rawAttrs);
+	const { properties, setProperties } = usePropertyContext();
+
+	useEffect(() => setProperties(trackingBlockData), []);
+
+	return { blocks, properties, setProperties, trackingBlockData }
+}
+
+const AddItemForm = withLocalBlockEditorRegistry((props) =>
+{
+	const { kind, name, registry } = props;
+	const { blocks, properties, setProperties, trackingBlockData } = useLocalBlocks(kind, name, {});
+
+	const [ func ] = useState({ update: () => {}})
+
+	const updateProperties = () =>
+	{
+		const newBlocks = registry.select('core/block-editor').getBlocks();
+		const changedMap = getChangedBlockQuery(newBlocks, properties);
+		const allChangedMap = getChangedBlockQuery(newBlocks, trackingBlockData);
+		const editedState = flatToObject(changedMap);
+		const flatAllChangedMap = flatToObject(allChangedMap)
+
+		console.log(properties);
+		console.log(editedState)
+		console.log(flatAllChangedMap);
+
+		if(changedMap.size)
+		{
+			console.log(" <> <> <> <> <> <> <> <> <> ")
+			setProperties(editedState);
+		}
+	};
+	
+	func.update = updateProperties;
+
+	useEffect(() => {
+		return registry.subscribe(() => {
+			//updateProperties();
+			func.update()
+		}, 'core/block-editor')
+	}, [])
+
+	useEffect(() => {
+		console.log("####### Property changed !!! ############")
+	}, [properties])
+
+
+	useEffect(() => {
+		console.log("####### set Property changed !!! ############")
+	}, [setProperties])
+
+	
+
+	useEffect(() => {
+		console.log("####### update Property changed !!! ############")
+	}, [updateProperties])
+
+
+	return (
+		<SubRegistryBlocksComponent blocks={blocks}>
+			<QueryFormBlocksContextProvider value={queryFormEditorBlocksContext}>
+				<EndpointEditor  />
+			</QueryFormBlocksContextProvider>
+		</SubRegistryBlocksComponent>
+	)
+});
+
+const EditItemForm = props =>
+{
+	const { kind, name, id } = props;
+	const { record, hasResolved } = useEntityRecord(kind, name, id);
+	return hasResolved ? <EditEditor record={record} {...props} /> : <p>LOADING...</p>;
+}
+const EditEditor = withLocalBlockEditorRegistry((props) =>
+{
+	const { kind, name, id, registry, record } = props;
+	const { blocks } = useLocalBlocks(kind, name, record);
+
+	// propertiesは参照値として保持されている。
+	// setProperties()はpropertiesの参照値を変更させない。
+	const { properties, setProperties } = usePropertyContext();
+
+	
+	useEffect(() => {
+		
+		return registry.subscribe(
+			() => {
+				const newBlocks = registry.select('core/block-editor').getBlocks();
+				const changedMap = getChangedBlockQuery(newBlocks, properties ?? {});
+
+				if(changedMap.size)
+				{
+					const editedState = flatToObject(changedMap);
+					console.log(editedState)
+					setProperties(editedState)
+				}
+			},
+			'core/block-editor'
+		)
+	}, [])
+
+	
+	return (
+		<SubRegistryBlocksComponent blocks={blocks}>
+			<QueryFormBlocksContextProvider value={queryFormEditorBlocksContext}>
+				<EndpointEditor  />
+			</QueryFormBlocksContextProvider>
+		</SubRegistryBlocksComponent>
+	)
+})
+
+
+const RemoveItemForm = ({value}) =>
+{
+	return (
+		<div>
+			<p>本当に削除しますか？</p>
+		</div>
+	)
+}
+
+
+const EndpointEditor = withEditTable(props =>
+{
+	// @ts-ignore
+	const blocks = useSelect(s => s('core/block-editor').getBlocks(), []);
+
+	return (
+		<InnerQueryFormHosts blocks={blocks} />
+	)
+});
+
+
+const AddEntityForm = withAddPostForm(AddItemForm);
+const EditEntityForm = withEditPostForm(EditItemForm);
+const DeleteEntityForm = withDeletePostButton(RemoveItemForm);
+
+export { AddEntityForm, EditEntityForm, DeleteEntityForm }

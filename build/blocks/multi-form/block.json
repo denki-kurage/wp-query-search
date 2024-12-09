@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "query-search/multi-query-form",
+  "title": "Multiple Query",
+  "description": "Select one from multiple data types and input",
+  "icon": "smiley",
+  "attributes": {
+    "query": {
+      "type": "object",
+      "default": null
+    },
+    "mode": {
+      "type": "string",
+      "default": "multi"
+    },
+    "selectedUid": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "query-search"
+}

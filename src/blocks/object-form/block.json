@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+    "name": "query-search/object-query-form",
+    "title": "Object Query",
+    "description": "Enter multiple data types",
+	"icon": "smiley",
+    "attributes":
+    {
+        "query": {
+            "type": "object",
+            "default": null
+        },
+        "mode": {
+            "type": "string",
+            "default": "object2"
+        }
+    },
+    "textdomain": "query-search"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "query-search/enum-query-form",
+  "title": "Enum Query",
+  "description": "Choose one from the list",
+  "icon": "smiley",
+  "attributes": {
+    "query": {
+      "type": "string",
+      "default": ""
+    },
+    "enumList": {
+      "type": [
+        "array",
+        "object"
+      ],
+      "default": []
+    }
+  },
+  "textdomain": "query-search"
+}

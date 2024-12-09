@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "query-search/datetime-query-form",
+  "title": "DateTime Query",
+  "description": "Enter date and time",
+  "icon": "smiley",
+  "attributes": {
+    "query": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "query-search"
+}

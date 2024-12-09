@@ -1,0 +1,477 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Query Search 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/query-search\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-11-03T12:22:20+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language: ja\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: query-search\n"
+
+#: query-search.php
+#: src/blocks/index.ts:20
+msgid "Query Search"
+msgstr "クエリ・サーチ"
+
+#: query-search.php
+msgid "This is a developer-only plugin. Create a REST API query and display the results in a DataGrid."
+msgstr "開発者専用プラグインです。REST APIのクエリの作成、結果をDataGridで表示します。"
+
+#: query-search.php
+msgid "Kurage Worker"
+msgstr "Kurage Worker"
+
+#: src/edit/query-forms.tsx:53
+#: src/edit/query-forms.tsx:93
+#: src/base-components/input-forms.tsx:338
+msgid "Add"
+msgstr "追加"
+
+#: src/edit/query-forms.tsx:106
+msgid "Add query form"
+msgstr "クエリフォームを追加"
+
+#: src/edit/query-forms.tsx:109
+msgid "Add from endpoint"
+msgstr "エンドポイントから追加"
+
+#: src/edit/query-filters.tsx:23
+msgid "Enable space saving"
+msgstr "省スペースを有効にする"
+
+#: src/edit/query-filters.tsx:55
+msgid "Query list"
+msgstr "クエリ・リスト"
+
+#: src/edit/query-filters.tsx:63
+msgid "Open the query list"
+msgstr "クエリ・リストを開く"
+
+#: src/edit/query-entity-editor.tsx:63
+msgid "Select entity"
+msgstr "エンティティを選択"
+
+#: src/edit/query-entity-editor.tsx:66
+msgid "Determine the entity"
+msgstr "エンティティを決定"
+
+#: src/edit/query-entity-editor.tsx:89
+msgid "Entity info"
+msgstr "エンティティ情報"
+
+#: src/edit/list-view.tsx:80
+msgid "Selected entity items"
+msgstr "選択されたアイテム一覧"
+
+#: src/edit/list-view.tsx:84
+msgid "Column view"
+msgstr "カラム・ビュー"
+
+#: src/edit/list-view-mui-data-grid-version.tsx:148
+msgid "Move"
+msgstr "移動"
+
+#: src/edit/list-view-mui-data-grid-version.tsx:153
+msgid "Go to edit page"
+msgstr "ページへ移動"
+
+#: src/edit/list-view-mui-data-grid-version.tsx:154
+msgid "Go to front"
+msgstr "フロントを表示"
+
+#: src/edit/list-view-mui-data-grid-version.tsx:159
+msgid "Actions"
+msgstr "コマンド"
+
+#: src/edit/list-view-mui-data-grid-version.tsx:165
+#: src/edit/list-view-commands.tsx:13
+#: src/edit/edit.tsx:67
+msgid "Edit"
+msgstr "編集"
+
+#: src/edit/list-view-mui-data-grid-version.tsx:166
+#: src/edit/list-view-commands.tsx:16
+#: src/base-components/async-dialog-components/with-entity-components.tsx:160
+msgid "Delete"
+msgstr "削除"
+
+#: src/edit/list-view-mui-data-grid-version.tsx:224
+msgid "Edit/Delete"
+msgstr "編集/削除"
+
+#: src/edit/list-view-inspector.tsx:12
+msgid "Data grid height"
+msgstr "データグリッドの高さ"
+
+#: src/edit/ids-view.tsx:42
+msgid "There are %s items"
+msgstr "%s 個のアイテムがあります"
+
+#: src/edit/ids-view.tsx:44
+msgid "Delete ID from list"
+msgstr "リストからIDを削除します"
+
+#: src/edit/ids-view.tsx:82
+#: src/base-components/input-forms.tsx:381
+msgid "Remove"
+msgstr "削除"
+
+#: src/edit/extension-button.tsx:22
+msgid "Select whether to enable features that are currently under development and therefore unstable"
+msgstr "現在開発中のため不安定の機能を有効にするかを選択します"
+
+#: src/edit/extension-button.tsx:24
+msgid "Enabled"
+msgstr "有効です"
+
+#: src/edit/extension-button.tsx:24
+msgid "Disabled"
+msgstr "無効です"
+
+#: src/edit/extension-button.tsx:27
+msgid "Toggle extension validity"
+msgstr "拡張機能の有効性を切り替える"
+
+#: src/edit/edit.tsx:40
+msgid "Hide hidden inner blocks"
+msgstr "内部ブロックを非表示"
+
+#: src/edit/edit.tsx:40
+msgid "Show hidden inner blocks"
+msgstr "内部ブロックを表示"
+
+#: src/edit/edit.tsx:46
+msgid "Add entity item"
+msgstr "エンティティを追加"
+
+#: src/edit/edit.tsx:67
+msgid "Apply edits"
+msgstr "編集を適用"
+
+#: src/edit/edit.tsx:81
+#: src/edit/edit.tsx:85
+msgid "Edit label"
+msgstr "ラベルの編集"
+
+#: src/edit/edit.tsx:126
+msgid "Use Extensions"
+msgstr "拡張機能の使用"
+
+#: src/edit/edit.tsx:136
+msgid "Query filter"
+msgstr "クエリ・フィルター"
+
+#: src/edit/edit.tsx:139
+msgid "Query forms"
+msgstr "クエリ・フォーム"
+
+#: src/edit/edit.tsx:161
+msgid "Hidden Inner blocks"
+msgstr "隠し内部ブロック"
+
+#: src/edit/edit.tsx:168
+msgid "Theme Color"
+msgstr "テーマ・カラー"
+
+#: src/edit/edit.tsx:171
+msgid "DataGrid settings"
+msgstr "データグリッド設定"
+
+#: src/edit/edit-wrapper.tsx:30
+msgid "Setting labels for results views"
+msgstr "結果ビューのラベル設定"
+
+#: src/edit/edit-wrapper.tsx:31
+#: src/base-components/input-forms.tsx:243
+#: src/base-components/input-forms.tsx:329
+msgid "Label"
+msgstr "ラベル"
+
+#: src/edit/edit-wrapper.tsx:33
+msgid "After setting the label, select the kind and name from the inspector"
+msgstr "ラベルの設定後、インスペクターから種類と名前を選んでください"
+
+#: src/blocks/hoc.tsx:50
+msgid "@ Result View"
+msgstr "■ 結果ビュー"
+
+#: src/blocks/hoc.tsx:94
+msgid "Please enter a query name"
+msgstr "クエリ名を入力してください"
+
+#: src/blocks/hoc.tsx:104
+msgid "Decide on a field name (%s)"
+msgstr "フィールド名を決定する (%s)"
+
+#: src/blocks/hoc.tsx:143
+msgid "This post has no result views. Create a results view."
+msgstr "この投稿に結果ビューが一つもありません。結果ビューを作成してください"
+
+#: src/blocks/hoc.tsx:154
+msgid "The currently set result view (%s) does not exist"
+msgstr "現在設定されている結果ビュー(%s)は存在しません"
+
+#: src/blocks/hoc.tsx:155
+msgid "Does not currently belong to a particular results view. Please select a result view below"
+msgstr "現在特定の結果ビューに属してません。以下の結果ビューを選んでください"
+
+#: src/blocks/hoc.tsx:161
+msgid "Select result view"
+msgstr "結果ビューの選択"
+
+#: src/blocks/hoc.tsx:181
+msgid "* required"
+msgstr "* 必須"
+
+#: src/blocks/hoc.tsx:286
+msgid "Field name"
+msgstr "フィールド名"
+
+#: src/blocks/hoc.tsx:287
+msgid "Editor"
+msgstr "エディター"
+
+#: src/blocks/hoc.tsx:356
+msgid "Query form info"
+msgstr "クエリフォーム情報"
+
+#: src/blocks/hoc.tsx:365
+msgid "Overwrite"
+msgstr "上書き"
+
+#: src/blocks/hoc.tsx:368
+msgid "Move to hidden blocks"
+msgstr "隠しブロックへ移動"
+
+#: src/blocks/hoc.tsx:374
+msgid "Result view info"
+msgstr "結果ビュー情報"
+
+#: src/blocks/hoc.tsx:379
+msgid "Change result view"
+msgstr "結果ビューを変更"
+
+#: src/blocks/hoc.tsx:382
+msgid "Choose a result view"
+msgstr "結果ビューを選択"
+
+#: src/base-components/input-forms.tsx:141
+msgid "Set the Date time"
+msgstr "時刻を設定"
+
+#: src/base-components/input-forms.tsx:166
+msgid "Select from the following"
+msgstr "以下の中から選択"
+
+#: src/base-components/input-forms.tsx:215
+#: src/base-components/input-forms.tsx:242
+#: src/base-components/input-forms.tsx:328
+msgid "Value"
+msgstr "値"
+
+#: src/base-components/input-forms.tsx:330
+msgid "Commands"
+msgstr "コマンド"
+
+#: src/base-components/input-forms.tsx:357
+msgid "Clear selection"
+msgstr "選択のクリア"
+
+#: src/base-components/input-forms.tsx:379
+msgid "Up"
+msgstr "上"
+
+#: src/base-components/input-forms.tsx:380
+msgid "Down"
+msgstr "下"
+
+#: src/blocks/multi-form/edit.tsx:50
+msgid "Query type is missing"
+msgstr "選択できるタイプがありません"
+
+#: src/blocks/multi-form/edit.tsx:55
+msgid "Select the query type to use"
+msgstr "使用するクエリのタイプを選択する"
+
+#: src/blocks/hash-form/edit.tsx:12
+#: src/blocks/array-form/edit.tsx:21
+msgid "Show list"
+msgstr "リストを表示"
+
+#: src/blocks/hash-form/edit.tsx:14
+#: src/blocks/array-form/edit.tsx:23
+msgid "Edit list"
+msgstr "リストの編集"
+
+#: src/blocks/enum-form/edit.tsx:28
+msgid "Edit item"
+msgstr "アイテムの編集"
+
+#: src/blocks/array-form/edit.tsx:56
+msgid "Get from results view"
+msgstr "結果ビューから取得"
+
+#: src/blocks/array-form/edit.tsx:58
+msgid "Choose a results view"
+msgstr "結果ビューを選択"
+
+#: src/blocks/array-form/edit.tsx:77
+msgid "Overwrite list"
+msgstr "リストを上書き"
+
+#: src/blocks/array-form/edit.tsx:78
+msgid "Add to List"
+msgstr "リストに追加"
+
+#: src/base-components/async-dialog-components/with-entity-components.tsx:132
+msgid "Saving"
+msgstr "保存中"
+
+#: src/base-components/async-dialog-components/with-entity-components.tsx:132
+msgid "Save"
+msgstr "保存"
+
+#: src/base-components/async-dialog-components/with-entity-components.tsx:133
+#: src/base-components/async-dialog-components/with-entity-components.tsx:147
+#: src/base-components/async-dialog-components/with-entity-components.tsx:161
+msgid "Close"
+msgstr "閉じる"
+
+#: src/base-components/async-dialog-components/with-entity-components.tsx:146
+msgid "Updating"
+msgstr "更新中"
+
+#: src/base-components/async-dialog-components/with-entity-components.tsx:146
+msgid "Update"
+msgstr "更新"
+
+#: src/base-components/async-dialog-components/with-entity-components.tsx:160
+msgid "Deleting"
+msgstr "削除中"
+
+#: src/block.json
+msgctxt "block title"
+msgid "Query Search Result View"
+msgstr "クエリ・サーチ　結果ビュー"
+
+#: src/block.json
+msgctxt "block description"
+msgid "This is a developer-only plugin. Create a REST API query and display the results in a DataGrid."
+msgstr "開発者専用プラグインです。REST APIのクエリの作成、結果をDataGridで表示します。"
+
+
+
+
+
+#: build/blocks/array-form/block.json
+#: src/blocks/array-form/block.json
+msgctxt "block title"
+msgid "Array Query"
+msgstr "配列 クエリ"
+
+#: build/blocks/array-form/block.json
+#: src/blocks/array-form/block.json
+msgctxt "block description"
+msgid "Enter the list"
+msgstr "リストを入力"
+
+#: build/blocks/boolean-form/block.json
+#: src/blocks/boolean-form/block.json
+msgctxt "block title"
+msgid "Boolean Query"
+msgstr "真偽値 クエリ"
+
+#: build/blocks/boolean-form/block.json
+#: src/blocks/boolean-form/block.json
+msgctxt "block description"
+msgid "Enter a truth value"
+msgstr "真偽値を入力"
+
+#: build/blocks/datetime-form/block.json
+#: src/blocks/datetime-form/block.json
+msgctxt "block title"
+msgid "DateTime Query"
+msgstr "日時 クエリ"
+
+#: build/blocks/datetime-form/block.json
+#: src/blocks/datetime-form/block.json
+msgctxt "block description"
+msgid "Enter date and time"
+msgstr "日時を入力"
+
+#: build/blocks/enum-form/block.json
+#: src/blocks/enum-form/block.json
+msgctxt "block title"
+msgid "Enum Query"
+msgstr "列挙体 クエリ"
+
+#: build/blocks/enum-form/block.json
+#: src/blocks/enum-form/block.json
+msgctxt "block description"
+msgid "Choose one from the list"
+msgstr "リストの中から選ぶ"
+
+#: build/blocks/hash-form/block.json
+#: src/blocks/hash-form/block.json
+msgctxt "block title"
+msgid "Hash Query"
+msgstr "ハッシュ クエリ"
+
+#: build/blocks/hash-form/block.json
+#: src/blocks/hash-form/block.json
+msgctxt "block description"
+msgid "Enter a list of key-value pairs"
+msgstr "キーと値のペアのリストを入力"
+
+#: build/blocks/multi-form/block.json
+#: src/blocks/multi-form/block.json
+msgctxt "block title"
+msgid "Multiple Query"
+msgstr "複合 クエリ"
+
+#: build/blocks/multi-form/block.json
+#: src/blocks/multi-form/block.json
+msgctxt "block description"
+msgid "Select one from multiple data types and input"
+msgstr "複数のデータ型から一つ選択して入力"
+
+#: build/blocks/number-form/block.json
+#: src/blocks/number-form/block.json
+msgctxt "block title"
+msgid "Number Query"
+msgstr "数値 クエリ"
+
+#: build/blocks/number-form/block.json
+#: src/blocks/number-form/block.json
+msgctxt "block description"
+msgid "Enter a number"
+msgstr "数値を入力"
+
+#: build/blocks/object-form/block.json
+#: src/blocks/object-form/block.json
+msgctxt "block title"
+msgid "Object Query"
+msgstr "オブジェクト クエリ"
+
+#: build/blocks/object-form/block.json
+#: src/blocks/object-form/block.json
+msgctxt "block description"
+msgid "Enter multiple data types"
+msgstr "複数のデータ型を入力"
+
+#: build/blocks/string-form/block.json
+#: src/blocks/string-form/block.json
+msgctxt "block title"
+msgid "String Query"
+msgstr "文字列 クエリ"
+
+#: build/blocks/string-form/block.json
+#: src/blocks/string-form/block.json
+msgctxt "block description"
+msgid "Enter a string"
+msgstr "文字列を入力"

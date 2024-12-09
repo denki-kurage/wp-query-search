@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "version": "0.1.0",
+  "category": "query-search",
+  "icon": "smiley",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": true,
+    "alignWide": true
+  },
+  "attributes": {
+    "uid": {
+      "type": "string",
+      "default": ""
+    },
+    "pid": {
+      "type": "string",
+      "default": ""
+    },
+    "field": {
+      "type": "string",
+      "default": ""
+    },
+    "query": {
+      "type": [
+        "string",
+        "object"
+      ],
+      "default": null
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "description": {
+      "type": "string",
+      "default": ""
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "level": {
+      "type": "integer",
+      "default": 1
+    }
+  },
+  "textdomain": "query-search"
+}

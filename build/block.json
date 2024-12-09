@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "query-search/result-view",
+  "version": "0.1.0",
+  "title": "Query Search Result View",
+  "category": "query-search",
+  "icon": "smiley",
+  "description": "This is a developer-only plugin. Create a REST API query and display the results in a DataGrid.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": true,
+    "alignWide": true
+  },
+  "attributes": {
+    "uid": {
+      "type": "string",
+      "default": ""
+    },
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "kind": {
+      "type": "string",
+      "default": ""
+    },
+    "name": {
+      "type": "string",
+      "default": ""
+    },
+    "checkedIds": {
+      "type": "array",
+      "default": []
+    },
+    "selectedColumns": {
+      "type": "array",
+      "default": [
+        "id",
+        "name",
+        "title",
+        "description"
+      ]
+    },
+    "minimum": {
+      "type": "boolean",
+      "default": false
+    },
+    "themeColor": {
+      "type": "string",
+      "default": "red"
+    },
+    "showBlocks": {
+      "type": "boolean",
+      "default": false
+    },
+    "listviewHeight": {
+      "type": "number",
+      "default": 400
+    }
+  },
+  "textdomain": "query-search",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "query-search/boolean-query-form",
+  "title": "Boolean Query",
+  "description": "Enter a truth value",
+  "icon": "smiley",
+  "attributes": {
+    "query": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "query-search"
+}

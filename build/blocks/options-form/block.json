@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "query-search/options-query-form",
+  "title": "Options Query",
+  "description": "Enter the list",
+  "icon": "smiley",
+  "attributes": {
+    "query": {
+      "type": "array",
+      "default": []
+    },
+    "enumList": {
+      "type": [
+        "array",
+        "object"
+      ],
+      "default": []
+    },
+    "viewTable": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "query-search"
+}

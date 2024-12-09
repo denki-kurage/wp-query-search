@@ -1,0 +1,68 @@
+{
+    "$schema": "https://json-schema.org/draft-06/schema",
+    "type": ["object"],
+    "oneOf": [
+        {
+            "title": "Text",
+            "description": "テキスト",
+            "type": "object",
+            "properties":
+            {
+                "textValue":
+                {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 20
+                },
+                "textMinLength":
+                {
+                    "type": "integer"
+                },
+                "useTextMinLength":
+                {
+                    "type": "boolean",
+                    "default": false
+                },
+                "textMaxLength":
+                {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "useTextMaxLength":
+                {
+                    "type": "boolean",
+                    "default": false
+                }
+            }
+        },
+        {
+            "title": "integer",
+            "description": "整数",
+            "type": "object",
+            "properties":
+            {
+                "numericValue":
+                {
+                    "type": "integer"
+                },
+                "intMinimum":
+                {
+                    "type": "integer"
+                },
+                "useIntMinimum":
+                {
+                    "type": "boolean"
+                },
+                "intMaximum":
+                {
+                    "type": "integer"
+                },
+                "useIntMaximum":
+                {
+                    "type": "boolean"
+                }
+            }
+        }
+
+    ]
+}
